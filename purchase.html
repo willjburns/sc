@@ -2,7 +2,6 @@
 
 <html>
 	<head>
-		
 		<title>Template page – Sneaker Contact</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -53,9 +52,13 @@
 					
 							<form id="fs-frm" name="registration-form" accept-charset="utf-8" action="https://formspree.io/f/xlezegpe" method="post">
 								<fieldset id="fs-frm-inputs">
+									<div class="col-6 col-12-small" required="">
+										<input type="checkbox" id="alex" name="alex" value="JORDAN 1 'POLLEN', 11.5, DS –– $200" onclick="myfunction(200)">
+										<label for="alex">JORDAN 1 'POLLEN', 11.5, DS –– $200</label>
+									</div>
 									<select name="items" required="" multiple>
-									<option rows="3" value="Select" selected="" disabled="">Item(s) you wish to purchase:</option>
-										<option id="alex" value="JORDAN 1 'POLLEN', 11.5, DS –– $200">JORDAN 1 'POLLEN', 11.5, DS –– $200</option>
+									<option value="Select" selected="" disabled="">Item(s) you wish to purchase:</option>
+										<option  onclick="myfunction(200)" value="JORDAN 1 'POLLEN', 11.5, DS –– $200">JORDAN 1 'POLLEN', 11.5, DS –– $200</option>
 										<option id="ben" value="JORDAN 1 'ELECTRO ORANGE', 11.5, DS –– $200">JORDAN 1 'ELECTRO ORANGE', 11.5, DS –– $200</option>
 										<option id="colter" value="JORDAN 4 'LIGHTNING', 11.5, DS –– $300">JORDAN 4 'LIGHTNING', 11.5, DS –– $300</option>
 										<option id="dennis" value="BLAZER MID 'POPCORN', 11.5, DS –– $200">BLAZER MID 'POPCORN', 11.5, DS –– $200</option>
@@ -75,7 +78,6 @@
 										<option id="rob" value="SUPREME X HANES BOXER BRIEFS 'PINK', M, DS –– $50">SUPREME X HANES BOXER BRIEFS 'PINK', M, DS –– $50</option>
 										<option id="salvadore" value="SUPREME X SWAROVSKI BEANIE, OS, DS –– $60">SUPREME X SWAROVSKI BEANIE, OS, DS –– $60</option>
 										<option id="tomm" value="SUPREME X ZIPPO LIGHTER, DS –– $60">SUPREME X ZIPPO LIGHTER, DS –– $60</option>
-										
 									</select>
 									<br>
 								<input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
@@ -141,6 +143,7 @@
 									
 									<input type="text" name="postal-code" placeholder="12345" required="">
 								</fieldset>
+									<Legend value="addingFunc()"></Legend>
 									<select name="paymentmethod" required="">
 									<option value="Select" selected="" disabled="">Payment Method</option>
 										<option value="Zelle">Zelle</option>
@@ -156,6 +159,7 @@
 								</fieldset>
 								<input type="submit" value="Complete Purchase">
 							</form>
+							<h3 id="goff" >Total Cost</h3>
 						</div>
 					</div>
 
@@ -204,20 +208,73 @@
 				<script src="assets/js/breakpoints.min.js"></script>
 				<script src="assets/js/util.js"></script>
 				<script src="assets/js/main.js"></script>
-	<script>
-		 function addingFunc(){
-			var x = 0;
-			if(document.getElementById("alex") == true ){
-				x = x + 200;
-			}
-			if(document.getElementById("ben") == true){
-				x = x + 200;
-			}
-			if(document.getElementById("colter") == true){
-				x = x + 300;
-			}
-			return x;
-		}
-	</script>
+				<script>
+
+					function myfunction(y);
+						x = x + y;
+						/*if(document.getElementById("alex").g){
+							x = x + 200;
+						}
+						if(document.getElementById("ben") == true){
+							x = x + 200;
+						}
+						if(document.getElementById("colter") == true){
+							x = x + 300;
+						}
+						if(document.getElementById("dennis") == true){
+							x = x + 200;
+						}
+						if(document.getElementById("edward") == true){
+							x = x + 150;
+						}
+						if(document.getElementById("frank") == true){
+							x = x + 120;
+						}
+						if(document.getElementById("greg") == true){
+							x = x + 250;
+						}
+						if(document.getElementById("hector") == true){
+							x = x + 200;
+						}
+						if(document.getElementById("ignatius") == true){
+							x = x + 40;
+						}
+						if(document.getElementById("jamal") == true){
+							x = x + 50;
+						}
+						if(document.getElementById("kwentyn") == true){
+							x = x + 200;
+						}
+						if(document.getElementById("lucas") == true){
+							x = x + 200;
+						}
+						if(document.getElementById("max") == true){
+							x = x + 150;
+						}
+						if(document.getElementById("norris") == true){
+							x = x + 100;
+						}
+						if(document.getElementById("othello") == true){
+							x = x + 60;
+						}
+						if(document.getElementById("peter") == true){
+							x = x + 60;
+						}if(document.getElementById("quention") == true){
+							x = x + 60;
+						}
+						if(document.getElementById("rob") == true){
+							x = x + 50;
+						}
+						if(document.getElementById("salvadore") == true){
+							x = x + 60;
+						}
+						if(document.getElementById("tomm") == true){
+							x = x + 60;
+						}*/
+						document.getElementById('goff').write("Your total is $" + x.toString());
+						
+						
+					}
+				</script>
 		</body>
 	</html>
