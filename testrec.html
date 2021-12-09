@@ -17,6 +17,7 @@
                 }
                 params = getParams();
             </script> 
+            
 		<title>Template page – Sneaker Contact</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -64,13 +65,13 @@
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-							<div id = "shoeName"></div>
-                            <h1><div id = "shoeName"></div></h1>
+                            <h1 id = "shoeName"></h1>
 							<span class="image main"><img src="shoeImage" alt="" /></span>
                             <h2>(Shoe size) <br> (Shoe Condition) <br> <em>$(shoe price)</em></h2>
 							<p>(StockX price (see python method in works, remember to make a method to calculate taxes and fees))</p>
                             <p>(Copy paste StockX description or something or write your own)</p>
 							</div>
+                            <input type ="button" onclick ="returnText()" value= "Display">
 					</div>
 
 				<!-- Footer -->
@@ -119,7 +120,9 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
             <script>
-
+            function returnText(){
+                    
+                
                 var para1=document.getElementById('shoeImage');
                 var para2=document.getElementById('shoeName');
                 var para3=document.getElementById('shoePrice');
@@ -131,7 +134,7 @@
                 para3.textContent = unescape(params[2]);
                 para4.textContent = unescape(params[3]);
                 para5.textContent = unescape(params[4]);
-                
+            }
                 </script> 
 	</body>
 </html>
