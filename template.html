@@ -7,6 +7,22 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+			<noscript>
+				function getParams() {
+				var idx = document.URL.indexOf('?');
+				var params = new Array();
+				if (idx != -1) {
+				var pairs = document.URL.substring(idx+1, document.URL.length).split('&');
+				for (var i=0; i<pairs.length; i++) {
+				nameVal = pairs[i].split('=');
+				params[nameVal[0]] = nameVal[1];
+				   }
+				}
+				return params;
+				}
+				params = getParams();
+			</noscript>
+		
 	</head>
 	<body class="is-preload">
 		<!-- Wrapper -->
@@ -37,7 +53,7 @@
 						<ul>
 							<li><a href="index.html">Home</a></li>
 							<li><a href="sneakers.html">Sneakers</a></li>
-							<li><a href="clothes.html">Clothes</a></li>
+							<li><a href="clothes.html">Apparel</a></li>
 							<li><a href="accessories.html">Accessories</a></li>
 							<li><a href="generic.html">About</a></li>
 							<li><a href="elements.html">Elements</a></li>
