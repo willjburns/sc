@@ -182,7 +182,7 @@ input, select, textarea {
 
 			h1 {
 				font-size: 2em;
-				margin: 0 0 1em 0;
+				margin: 1 1 1em 1;
 			}
 
 		}
@@ -202,8 +202,17 @@ input, select, textarea {
 		text-transform: uppercase;
 		letter-spacing: 0.35em;
 	}
+	h6 {
+		font-weight: 900;
+		line-height: 1.5;
+		margin: auto;
+		width: 70%;
+		text-align:center;
+		text-transform: uppercase;
+		letter-spacing: 0.35em;
+	}
 
-		h2 a, h3 a, h4 a, h5 a, h6 a {
+		h2 a, h3 a, h4 a, h5 a, h6 a{
 			color: inherit;
 		}
 
@@ -224,7 +233,7 @@ input, select, textarea {
 	}
 
 	h6 {
-		font-size: 0.8em;
+		font-size: 1.4em;
 	}
 
 	@media screen and (max-width: 980px) {
