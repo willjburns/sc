@@ -64,7 +64,8 @@
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-							<div id = "shoeName"> </div>
+							div id = "shoeName"> </div>
+                            <h1></h1>
 							<span class="image main"><img src="shoeImage" alt="" /></span>
                             <h2>(Shoe size) <br> (Shoe Condition) <br> <em>$(shoe price)</em></h2>
 							<p>(StockX price (see python method in works, remember to make a method to calculate taxes and fees))</p>
@@ -119,11 +120,11 @@
 			<script src="assets/js/main.js"></script>
             <script>
 
-                var para1=document.getElementById('shoeImage');
-                var para2=document.getElementById('shoeName');
-                var para3=document.getElementById('shoePrice');
-                var para4=document.getElementById('shoeSize');
-                var para5=document.getElementById('shoeCond');
+                var para1=document.getElementById('shoeImage').textContent;
+                var para2=document.getElementById('shoeName').textContent;
+                var para3=document.getElementById('shoePrice').textContent;
+                var para4=document.getElementById('shoeSize').textContent;
+                var para5=document.getElementById('shoeCond').textContent;
                 
                 para1.value = unescape(params["var1"]);
                 para2.value = unescape(params["var2"]);
