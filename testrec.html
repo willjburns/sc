@@ -64,7 +64,7 @@
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-							<h1>(Shoe Name)</h1>
+							<h1 id = "shoeName"></h1>
 							<span class="image main"><img src="template.jpg" alt="" /></span>
                             <h2>(Shoe size) <br> (Shoe Condition) <br> <em>$(shoe price)</em></h2>
 							<p>(StockX price (see python method in works, remember to make a method to calculate taxes and fees))</p>
@@ -117,6 +117,20 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+            <script>
 
+                var para1=document.getElementById('shoeImage');
+                var para2=document.getElementById('shoeName');
+                var para3=document.getElementById('shoePrice');
+                var para4=document.getElementById('shoeSize');
+                var para5=document.getElementById('shoeCond');
+                
+                para1.value = unescape(params["var1"]);
+                para2.value = unescape(params["var2"]);
+                para3.value = unescape(params["var3"]);
+                para4.value = unescape(params["var4"]);
+                para5.value = unescape(params["var5"]);
+                
+                </script> 
 	</body>
 </html>
