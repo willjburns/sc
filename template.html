@@ -52,36 +52,100 @@
 						<div class="inner">
 							<h1>(Shoe Name)</h1>
 							<span class="image main"><img src="template.jpg" alt="" /></span>
+							<script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+<script>
+  
+  window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+     
+  formbutton("create", {
+    action: "https://formspree.io/f/xlezegpe",
+    title: "Purchase",
+    fields: [
+      { 
+        type: "email", 
+        label: "Email:", 
+        name: "email",
+        required: true,
+        placeholder: "your@email.com"
+      },
+      {
+        type: "textarea",
+        label: "Street Address:",
+        name: "street address",
+		required: true,
+        placeholder: "123 Shoe Street",
+      },
+	  {
+        type: "textarea",
+        label: "City:",
+        name: "city",
+		required: true,
+        placeholder: "Citytown",
+      },
+	  {
+        type: "select",
+        label: "State:",
+        name: "state",
+		required: true,
+        placeholder: "CA",
+      },
+	  {
+        type: "textarea",
+        label: "ZIP Code:",
+        name: "zip code",
+		required: true,
+        placeholder: "99999",
+      },
+	  {
+        type: "textarea",
+        label: "Venmo username:",
+        name: "venmo",
+		required: true,
+        placeholder: "@venmousername",
+      },
+      { type: "submit" }      
+    ],
+    styles: {
+      title: {
+        backgroundColor: "gray"
+      },
+      button: {
+        backgroundColor: "gray"
+      }
+    }
+  });
+</script>
+
                             <h2>(Shoe size) <br> (Shoe Condition) <br> <em>$(shoe price)</em></h2>
 							<p>(StockX price (see python method in works, remember to make a method to calculate taxes and fees))</p>
                             <p>(Copy paste StockX description or something or write your own)</p>
 							</div>
 					</div>
 
-				<!-- Footer -->
+					<!-- Footer -->
 					<footer id="footer">
 						<div class="inner">
 							<section>
-								<h2>Get in touch</h2>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<input type="text" name="name" id="name" placeholder="Name" />
-										</div>
-										<div class="field half">
-											<input type="email" name="email" id="email" placeholder="Email" />
-										</div>
-										<div class="field">
-											<textarea name="message" id="message" placeholder="Message"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send" class="primary" /></li>
-									</ul>
-								</form>
+								<h2>Sign up to sell on Sneaker Contact!</h2>
+								
+								<form
+									action="https://formspree.io/f/xqknkeea"
+									method="POST"
+									>
+									<label>
+										Your email:
+										<input type="email" name="_replyto">
+									</label>
+									<label>
+										Your message:
+										<textarea name="message"></textarea>
+									</label>
+									<!-- your other form fields go here -->
+									<button type="submit">Send</button>
+									</form>
 							</section>
 							<section>
-								<h2>Follow</h2>
+								<h2>Get In Touch</h2>
 								<ul class="icons">
 									<li><a href="https://www.instagram.com/willjburns/" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
 									<li><a href="https://github.com/willjburns" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
@@ -94,15 +158,15 @@
 							</ul>
 						</div>
 					</footer>
-
+	
 			</div>
-
+	
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+	
 	</body>
-</html>
+	</html>
