@@ -53,8 +53,30 @@
 					
 							<form id="fs-frm" name="registration-form" accept-charset="utf-8" action="https://formspree.io/f/xlezegpe" method="post">
 								<fieldset id="fs-frm-inputs">
-								<label for="itm">Item you wish to purchase:</label>
-								<input type="text" name="item of purchase" id="item of purchase" placeholder="ex: Air Jordan 1 'Bred'" required="">
+									<select name="items" required="" multiple>
+									<option rows="3" value="Select" selected="" disabled="">Item(s) you wish to purchase:</option>
+										<option id="alex" value="JORDAN 1 'POLLEN', 11.5, DS –– $200">JORDAN 1 'POLLEN', 11.5, DS –– $200</option>
+										<option id="ben" value="JORDAN 1 'ELECTRO ORANGE', 11.5, DS –– $200">JORDAN 1 'ELECTRO ORANGE', 11.5, DS –– $200</option>
+										<option id="colter" value="JORDAN 4 'LIGHTNING', 11.5, DS –– $300">JORDAN 4 'LIGHTNING', 11.5, DS –– $300</option>
+										<option id="dennis" value="BLAZER MID 'POPCORN', 11.5, DS –– $200">BLAZER MID 'POPCORN', 11.5, DS –– $200</option>
+										<option id="edward" value="UNDEFEATED AM97, 'MILITIA GREEN', 11, DS –– $150">UNDEFEATED AM97, 'MILITIA GREEN', 11, DS –– $150</option>
+										<option id="frank" value="UNDEFEATED AM97, 'BLACK/VOLT', 11, DS –– $120">UNDEFEATED AM97, 'BLACK/VOLT', 11, DS –– $120</option>
+										<option id="greg" value="SOCIAL STATUS DUNK MID 'STRAWBERRY MILK', 11.5, DS –– $250">SOCIAL STATUS DUNK MID 'STRAWBERRY MILK', 11.5, DS –– $250</option>
+										<option id="hector" value="NIKE SB X PARRA USA TRACKSUIT, M, DS –– $200">NIKE SB X PARRA USA TRACKSUIT, M, DS –– $200</option>
+										<option id="ignatius" value="NIKE SB X CARPET SKATE TEE, M, DS –– $40">NIKE SB X CARPET SKATE TEE, M, DS –– $40</option>
+										<option id="jamal" value="SUPREME X WHEATIES TEE, L, DS –– $50">SUPREME X WHEATIES TEE, L, DS, $50</option>
+										<option id="kwentyn" value="SUPREME X SWAROVSKI S LOGO HOODIE, L, DS –– $200">SUPREME X SWAROVSKI S LOGO HOODIE, L, DS –– $200</option>
+										<option id="lucas" value="SUPREME BIG LOGO HOODIE, M, DS –– $200">SUPREME BIG LOGO HOODIE, M, DS –– $200</option>
+										<option id="max" value="SUPREME X NORTH FACE ICE CLIMB HOODIE, M, DS –– $150">SUPREME X NORTH FACE ICE CLIMB HOODIE, M DS –– $150</option>
+										<option id="norris" value="SUPREME RICK RUBIN TEE, L, DS –– $100">SUPREME RICK RUBIN TEE, L, DS –– $100</option>
+										<option id="othello" value="SUPREME WATER GUN TEE, M, DS –– $60">SUPREME WATER GUN TEE, M, DS –– $60</option>
+										<option id="peter" value="SUPREME RAPHAEL TEE, M, DS –– $60">SUPREME RAPHAEL TEE, M, DS –– $60</option>
+										<option id="quentin" value="SUPREME FIVE BOROUGHS TEE, M, DS –– $60">SUPREME FIVE BOROUGHS TEE, M, DS –– $60</option>
+										<option id="rob" value="SUPREME X HANES BOXER BRIEFS 'PINK', M, DS –– $50">SUPREME X HANES BOXER BRIEFS 'PINK', M, DS –– $50</option>
+										<option id="salvadore" value="SUPREME X SWAROVSKI BEANIE, OS, DS –– $60">SUPREME X SWAROVSKI BEANIE, OS, DS –– $60</option>
+										<option id="tomm" value="SUPREME X ZIPPO LIGHTER, DS –– $60">SUPREME X ZIPPO LIGHTER, DS –– $60</option>
+										
+									</select>
 								<label for="email-address">Email Address</label>
 								<input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
 								<label for="street-address">Street Address</label>
@@ -181,6 +203,20 @@
 				<script src="assets/js/breakpoints.min.js"></script>
 				<script src="assets/js/util.js"></script>
 				<script src="assets/js/main.js"></script>
-	
+	<script>
+		 function addingFunc(){
+			var x = 0;
+			if(document.getElementById("alex") == true ){
+				x = x + 200;
+			}
+			if(document.getElementById("ben") == true){
+				x = x + 200;
+			}
+			if(document.getElementById("colter") == true){
+				x = x + 300;
+			}
+			return x;
+		}
+	</script>
 		</body>
 	</html>
