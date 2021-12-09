@@ -2,15 +2,7 @@
 
 <html>
 	<head>
-		<script>
-		function myFunction() {
-			var x = document.getElementById("showDiv");
-			if (x.style.display === "none") {
-			  x.style.display = "block";
-			} else {
-			  x.style.display = "none";
-			}
-		  }</script>
+		
 		<title>Template page – Sneaker Contact</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -60,7 +52,7 @@
 						<div class="inner">
 							<h1>(Shoe Name)</h1>
 							<span class="image main"><img src="template.jpg" alt="" /></span>
-							<button onclick="myFunction()">Click Me</button>
+							<button onclick="myFunction()">Purchase</button>
 
 					<div id="showDiv">
 						<form id="fs-frm" name="registration-form" accept-charset="utf-8" action="https://formspree.io/f/{form_id}" method="post">
@@ -141,7 +133,7 @@
 							  <textarea rows="1" name="payment username" id="paymentusername" placeholder="@paymentusername"required=""></textarea>
 							  <input type="hidden" name="_subject" id="email-subject" value="Registration Form Submission">
 							</fieldset>
-							<input type="submit" value="Purchase">
+							<input type="submit" value="Complete Purchase">
 						  </form>
 					</div>
 
@@ -194,6 +186,15 @@
 			</div>
 	
 		<!-- Scripts -->
+		<script>
+			function myFunction() {
+				var x = document.getElementById("showDiv");
+				if (x.style.display === "none") {
+				  x.style.display = "block";
+				} else {
+				  x.style.display = "none";
+				}
+			  }</script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
