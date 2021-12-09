@@ -2,6 +2,84 @@
 
 <html>
 	<head>
+		<script type="text/javascript">
+			var x = 0;
+			function myfunction(y){
+				x = x + y;
+				/*if(document.getElementById("alex").g){
+					x = x + 200;
+				}
+				if(document.getElementById("ben") == true){
+					x = x + 200;
+				}
+				if(document.getElementById("colter") == true){
+					x = x + 300;
+				}
+				if(document.getElementById("dennis") == true){
+					x = x + 200;
+				}
+				if(document.getElementById("edward") == true){
+					x = x + 150;
+				}
+				if(document.getElementById("frank") == true){
+					x = x + 120;
+				}
+				if(document.getElementById("greg") == true){
+					x = x + 250;
+				}
+				if(document.getElementById("hector") == true){
+					x = x + 200;
+				}
+				if(document.getElementById("ignatius") == true){
+					x = x + 40;
+				}
+				if(document.getElementById("jamal") == true){
+					x = x + 50;
+				}
+				if(document.getElementById("kwentyn") == true){
+					x = x + 200;
+				}
+				if(document.getElementById("lucas") == true){
+					x = x + 200;
+				}
+				if(document.getElementById("max") == true){
+					x = x + 150;
+				}
+				if(document.getElementById("norris") == true){
+					x = x + 100;
+				}
+				if(document.getElementById("othello") == true){
+					x = x + 60;
+				}
+				if(document.getElementById("peter") == true){
+					x = x + 60;
+				}if(document.getElementById("quention") == true){
+					x = x + 60;
+				}
+				if(document.getElementById("rob") == true){
+					x = x + 50;
+				}
+				if(document.getElementById("salvadore") == true){
+					x = x + 60;
+				}
+				if(document.getElementById("tomm") == true){
+					x = x + 60;
+				}*/
+				document.getElementById('goff').write("Your total is $" + x.toString());
+				return x;
+			}
+		</script>
+		<script>
+			var x =  0;
+			function bigdoer(y){
+				x = x + y;
+				document.getElementById('prop').innerHTML = x.toString;
+				/*p = document.createElement("p");
+				p.innerHTML = "Your total is $"+x.toString();
+
+				document.getElementById(prop).appendChild(p);*/
+			}
+			</script>
 		<title>Template page – Sneaker Contact</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -52,12 +130,8 @@
 					
 							<form id="fs-frm" name="registration-form" accept-charset="utf-8" action="https://formspree.io/f/xlezegpe" method="post">
 								<fieldset id="fs-frm-inputs">
-									<div class="col-6 col-12-small" required="">
-										<input type="checkbox" id="alex" name="alex" value="JORDAN 1 'POLLEN', 11.5, DS –– $200" onclick="myfunction(200)">
-										<label for="alex">JORDAN 1 'POLLEN', 11.5, DS –– $200</label>
-									</div>
-									<select name="items" required="" multiple>
-									<option value="Select" selected="" disabled="">Item(s) you wish to purchase:</option>
+									<select name="items" required="" >
+									<option value="Select" selected="" disabled="">Item:</option>
 										<option  onclick="myfunction(200)" value="JORDAN 1 'POLLEN', 11.5, DS –– $200">JORDAN 1 'POLLEN', 11.5, DS –– $200</option>
 										<option id="ben" value="JORDAN 1 'ELECTRO ORANGE', 11.5, DS –– $200">JORDAN 1 'ELECTRO ORANGE', 11.5, DS –– $200</option>
 										<option id="colter" value="JORDAN 4 'LIGHTNING', 11.5, DS –– $300">JORDAN 4 'LIGHTNING', 11.5, DS –– $300</option>
@@ -82,9 +156,10 @@
 									<br>
 								<input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
 								<br>
-								<input type="text" name="street" id="street-address" placeholder="Street Address" required="">
+								<strong>Shipping</strong>
+								<br>
 								<fieldset class="locale">
-									<legend>Locale</legend>
+									<input type="text" name="street" id="street-address" placeholder="Street Address" required="">
 									<input type="text" name="city" placeholder="City" required="">
 									<select name="state" required="">
 									<option value="Select" selected="" disabled="">State</option>
@@ -143,7 +218,9 @@
 									
 									<input type="text" name="postal-code" placeholder="12345" required="">
 								</fieldset>
-									<Legend value="addingFunc()"></Legend>
+								<fieldset>
+									<br>
+									<strong>Payment</strong>
 									<select name="paymentmethod" required="">
 									<option value="Select" selected="" disabled="">Payment Method</option>
 										<option value="Zelle">Zelle</option>
@@ -153,13 +230,15 @@
 										
 									</select>
 									<br>
-								<label for="note">Payment Username</label>
-								<textarea rows="1" name="payment username" id="paymentusername" placeholder="@paymentusername"required=""></textarea>
-								<input type="hidden" name="_subject" id="email-subject" value="Registration Form Submission">
+								
+								<input type="text" name="payment username" id="paymentusername" placeholder="@paymentusername"required="">
+								
 								</fieldset>
+							</fieldset>
+								<br>
 								<input type="submit" value="Complete Purchase">
 							</form>
-							<h3 id="goff" >Total Cost</h3>
+							<p id='prop'></p>
 						</div>
 					</div>
 
@@ -208,73 +287,6 @@
 				<script src="assets/js/breakpoints.min.js"></script>
 				<script src="assets/js/util.js"></script>
 				<script src="assets/js/main.js"></script>
-				<script>
-
-					function myfunction(y);
-						x = x + y;
-						/*if(document.getElementById("alex").g){
-							x = x + 200;
-						}
-						if(document.getElementById("ben") == true){
-							x = x + 200;
-						}
-						if(document.getElementById("colter") == true){
-							x = x + 300;
-						}
-						if(document.getElementById("dennis") == true){
-							x = x + 200;
-						}
-						if(document.getElementById("edward") == true){
-							x = x + 150;
-						}
-						if(document.getElementById("frank") == true){
-							x = x + 120;
-						}
-						if(document.getElementById("greg") == true){
-							x = x + 250;
-						}
-						if(document.getElementById("hector") == true){
-							x = x + 200;
-						}
-						if(document.getElementById("ignatius") == true){
-							x = x + 40;
-						}
-						if(document.getElementById("jamal") == true){
-							x = x + 50;
-						}
-						if(document.getElementById("kwentyn") == true){
-							x = x + 200;
-						}
-						if(document.getElementById("lucas") == true){
-							x = x + 200;
-						}
-						if(document.getElementById("max") == true){
-							x = x + 150;
-						}
-						if(document.getElementById("norris") == true){
-							x = x + 100;
-						}
-						if(document.getElementById("othello") == true){
-							x = x + 60;
-						}
-						if(document.getElementById("peter") == true){
-							x = x + 60;
-						}if(document.getElementById("quention") == true){
-							x = x + 60;
-						}
-						if(document.getElementById("rob") == true){
-							x = x + 50;
-						}
-						if(document.getElementById("salvadore") == true){
-							x = x + 60;
-						}
-						if(document.getElementById("tomm") == true){
-							x = x + 60;
-						}*/
-						document.getElementById('goff').write("Your total is $" + x.toString());
-						
-						
-					}
-				</script>
+				
 		</body>
 	</html>
