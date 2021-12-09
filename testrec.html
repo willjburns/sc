@@ -64,7 +64,7 @@
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-							<div id = "shoeName"></div>
+							<div id = "shoeName"><a shoeName></a></div>
                             <h1></h1>
 							<span class="image main"><img src="shoeImage" alt="" /></span>
                             <h2>(Shoe size) <br> (Shoe Condition) <br> <em>$(shoe price)</em></h2>
@@ -126,11 +126,11 @@
                 var para4=document.getElementById('shoeSize');
                 var para5=document.getElementById('shoeCond');
                 
-                para1.textContent = unescape(params["var1"]);
-                para2.textContent = unescape(params["var2"]);
-                para3.textContent = unescape(params["var3"]);
-                para4.textContent = unescape(params["var4"]);
-                para5.textContent = unescape(params["var5"]);
+                para1.value = unescape(params["var1"]);
+                para2.value = unescape(params["var2"]);
+                para3.value = unescape(params["var3"]);
+                para4.value = unescape(params["var4"]);
+                para5.value = unescape(params["var5"]);
                 
                 </script> 
 	</body>
